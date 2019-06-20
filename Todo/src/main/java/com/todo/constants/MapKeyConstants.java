@@ -2,7 +2,7 @@ package com.todo.constants;
 
 /*
  * A public class that contains only final Strings.
- * These Strings are used as Map keys. 
+ * These Strings are used as Map keys.   
  */
 
 public class MapKeyConstants {
