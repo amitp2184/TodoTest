@@ -1,3 +1,9 @@
 table {
     width: 100%;
   }
+
+.mtBtn{
+    overflow: visible;
+    background: #fff;
+    border: none;
+}
