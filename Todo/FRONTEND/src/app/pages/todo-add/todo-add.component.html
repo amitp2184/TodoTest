@@ -1,0 +1,36 @@
+<div>
+  <table align="center" cellpadding="10px">
+    <tbody>
+      <tr>
+        <td>
+          Title
+        </td>
+        <td>
+          <input type="text" [(ngModel)]="todomodel.title" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Description
+        </td>
+        <td>
+          <input type="text" [(ngModel)]="todomodel.description"/>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Time of event
+        </td>
+        <td>
+          <input type="datetime-local"  [(ngModel)]="todomodel.timeOfEvent" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="button" value="Create Todo" (click)="addTodo();"/>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
