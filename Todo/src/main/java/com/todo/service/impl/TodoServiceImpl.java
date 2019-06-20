@@ -1,7 +1,6 @@
 package com.todo.service.impl;
 
 import java.sql.Timestamp;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -15,7 +14,9 @@ import com.todo.entity.Todo;
 import com.todo.repository.TodoRepository;
 import com.todo.service.TodoService;
 import com.todo.utility.ConversionUtility;
-
+/*
+ * implementation for service interface of todo
+ */
 @Service
 public class TodoServiceImpl implements TodoService {
 

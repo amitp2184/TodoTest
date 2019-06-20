@@ -6,6 +6,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +19,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.todo.constants.UriConstants;
 import com.todo.service.TodoService;
 
+
+/*
+ * Controller for uri
+ */
+
+@CrossOrigin
 @RestController
 @RequestMapping(value = UriConstants.API + UriConstants.TODO)
 public class TodoController {
@@ -50,7 +57,7 @@ public class TodoController {
 		return new ResponseEntity<>(todoService.removeById(todoSeqId),HttpStatus.OK);
 	}
 	
-	@DeleteMapping(UriConstants.DELETE + UriConstants.ALL)
+	@PostMapping(UriConstants.DELETE + UriConstants.ALL)
 	public ResponseEntity<Boolean> removeByIds(@RequestBody Map<String,Object> context){
 		return new ResponseEntity<>(todoService.removeByIds(context),HttpStatus.OK);
 	}

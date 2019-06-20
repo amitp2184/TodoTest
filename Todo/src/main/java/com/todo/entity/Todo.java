@@ -11,7 +11,10 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-
+/*
+ * Entity for todo
+ * 
+ */
 @Entity
 @Table(name="todo")
 public class Todo implements Serializable {
